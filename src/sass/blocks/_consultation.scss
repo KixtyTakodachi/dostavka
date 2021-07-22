@@ -1,0 +1,45 @@
+.consultation{
+    margin-bottom: 79px;
+    &__title{
+        font-size: 28px;
+        font-weight: 400;
+        color: #3A3A3A;
+        text-align: center;
+    }
+    &__form{
+        border: 1px solid #eaeaea;
+        position: relative;
+        margin-top: 71px;
+        padding: 68px 0 53px 0;
+        text-align: center;
+        input{
+            font-size: 13px;
+            font-weight: 300;
+            border: 1px solid #eaeaea;
+            border-radius: 30px;
+            padding: 14px 28px;
+            width: 268px;
+        }
+        &__imgdiv{
+            background-color: white;
+            position: absolute;
+            top: -51px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 0 10px;
+        }
+        &__btndiv{
+            background-color: white;
+            position: absolute;
+            bottom: -23px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 0 10px;
+        }
+    }
+    &__btn{
+        width: 180px;
+        height: 45px;
+        font-size: 12px;
+    }
+}

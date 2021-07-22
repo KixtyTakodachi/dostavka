@@ -1,0 +1,35 @@
+.scheme{
+    background-color: #F3F3F3;
+    padding: 52px 0 46px 0;
+    &__wrapper{
+        &__first{
+            margin-top: 36px;
+            display: grid;
+            grid-template-columns: repeat(4, 250px);
+            justify-content: space-between;
+            column-gap: 40px;
+        }
+        &__second{
+            margin-top: 26px;
+            display: grid;
+            grid-template-columns: repeat(3, 250px);
+            justify-content: space-evenly;
+        }
+    }
+    &__item{
+        text-align: center;
+    }
+    &__title{
+        margin-top: 5px;
+        font-size: 16px;
+        color: $main_color;
+        font-weight: 700;
+    }
+    &__descr{
+        font-size: 14px;
+        font-weight: 300;
+    }
+    &__image{
+        height: 60px;
+    }
+}

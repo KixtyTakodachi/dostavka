@@ -1,0 +1,23 @@
+.work{
+    padding: 51px 0 57px 0;
+    &__wrapper{
+        margin-top: 35px;
+        display: grid;
+        grid-template-columns: repeat(3,362px);
+        column-gap: 28px;
+    }
+    &__item{
+        text-align: center;
+    }
+    &__title{
+        margin-top: 28px;
+        font-size: 18px;
+        color: $main_color;
+        font-weight: 700;
+    }
+    &__descr{
+        font-size: 14px;
+        font-weight: 300;
+        margin-top: 5px;
+    }
+}
