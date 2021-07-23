@@ -12,6 +12,8 @@
         margin-top: 71px;
         padding: 68px 0 53px 0;
         text-align: center;
+        display: flex;
+        justify-content: center;
         input{
             font-size: 13px;
             font-weight: 300;
@@ -37,9 +39,26 @@
             padding: 0 10px;
         }
     }
+    &__input{
+        width: 268px;
+        margin-right: 6px;
+        position: relative;
+    }
     &__btn{
         width: 180px;
         height: 45px;
+        font-size: 12px;
+    }
+    .error{
+        border: 1px solid red;
+    }
+    label.error{
+        position: absolute;
+        bottom: -30px;
+        left: 30px;
+        color: black;
+        border: none;
+        text-align: center;
         font-size: 12px;
     }
 }
