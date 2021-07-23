@@ -74,5 +74,12 @@ header{
         width: 160px;
         height: 45px;
         font-size: 12px;
+        text-align: center;
+        padding-top: 14px;
+        font-weight: 400;
+        &:hover{
+            color: white;
+            text-decoration: none;
+        }
     }
 }

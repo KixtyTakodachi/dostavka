@@ -76,13 +76,11 @@
 
 .slick-slide
 {
-    opacity: 0.5;
+    display: none;
     float: left;
 
     height: 100%;
     min-height: 1px;
-    transform: scale(0.6);
-    transition: 0.5s all;
 }
 [dir='rtl'] .slick-slide
 {
