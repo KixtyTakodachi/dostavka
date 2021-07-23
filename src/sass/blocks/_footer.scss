@@ -1,0 +1,79 @@
+.footer{
+    padding: 25px 0 28px 0;
+    background-color: #25333c;
+    &__upper{
+        display: flex;
+        align-items: center;
+    }
+    &__logo{
+        width: 68px;
+        height: 71px;
+    }
+    &__title{
+        text-align: left;
+        color: white;
+        font-size:16px;
+        font-weight: 700;
+        margin-left: 43px;
+    }
+    &__contacts{
+        text-align: right;
+        margin-left: 280px;
+    }
+    &__subheader{
+        font-size: 14px;
+        color: white;
+        font-weight: 300;
+    }
+    &__call{
+        color: white;
+        text-decoration: none;
+        &:hover{
+            color: white;
+            text-decoration: none;  
+        }
+    }
+    &__button{
+        margin-left: 20px;
+        width: 160px;
+        height: 45px;
+        font-size: 12px;
+    }
+    &__divider{
+        height: 1px;
+        background-color: #677177;
+        width: 100%;
+        margin-top: 26px;
+    }
+    &__down{
+        display: flex;
+        align-items: center;
+    }
+    &__copyright{
+        font-size: 13px;
+        font-weight: 300;
+        color: white;
+    }
+    &__policy{
+        font-size: 13px;
+        color: $main_color;
+        text-decoration: underline;
+        margin-left: 223px;
+        &:hover{
+            color: $main_color;
+            text-decoration: underline; 
+        }
+    }
+    &__creator{
+        margin-left: 456px;
+        display: flex;
+        align-items: center;
+
+    }
+    &__text{
+        font-size: 13px;
+        font-weight: 300;
+        color: white;
+        margin-right: 10px;
+    }
+}
