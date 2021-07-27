@@ -1,0 +1,720 @@
+@media (max-width: 1200px) {
+    .container{
+        max-width: 960px;
+    }
+    .menu{
+        &__list{
+            margin-left: 15px;
+        }
+        &__contacts{
+            margin-left: 5px;
+        }
+        &__item{
+            padding: 0px 4px;
+        }
+        &__button{
+            margin-left: 15px;
+            width: 150px
+        }
+    }
+    .promo{
+        &__uptitle{
+            font-size: 20px;
+        }
+        &__title{
+            font-size: 68px;
+        }
+        &__subtitle{
+            font-size: 38px;
+        }
+        &__descr{
+            font-size: 14px;
+        }
+        &__btn{
+            font-size: 14px;
+            width: 200px;
+        }
+        &__wrapper{
+            grid-template-columns: repeat(4,210px);
+            column-gap: 30px;
+        }
+    }
+    .advantages{
+        &__wrapper{
+        grid-template: repeat(4,minmax(62px,auto))/repeat(2,430px);
+        }
+    }
+    .work{
+        &__wrapper{
+            grid-template-columns: repeat(3,300px);
+        }
+        &__img{
+            width: 100%;
+        }
+    }
+    .price{
+        &__wrapper{
+            grid-template-columns: repeat(4,auto);
+        }
+    }
+    .scheme{
+        &__wrapper{
+            &__first{
+                grid-template-columns: repeat(4,auto);
+            }
+        }
+    }
+    .footer{
+        &__contacts{
+            margin-left: 125px;
+        }
+        &__policy{
+            margin-left: 190px;
+        }
+        &__creator{
+            margin-left: 400px;
+        }
+        &__text{
+            margin-right: 0px;
+        }
+    }
+    .feedback{
+        .slick-prev{
+            left: 400px;
+        }
+        .slick-next{
+            right: 400px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container{
+        max-width: 720px;
+    }
+    .promo{
+        &__divider{
+            margin: 38px 120px 35px 120px;
+        }
+        &__uptitle{
+            font-size: 18px;
+        }
+        &__title{
+            font-size: 50px;
+            margin-top: 10px;
+        }
+        &__subtitle{
+            font-size: 28px;
+            margin-top: 0;
+        }
+        &__btn{
+            height: 50px;
+            width: 190px;
+        }
+        &__descr{
+            font-size: 12px;
+        }
+        &__wrapper{
+            column-gap: 33px;
+            grid-template-columns: repeat(4,150px);
+        }
+    }
+    .hamburger{
+        display: block;
+        right: -40px;
+        &_active{
+            span{
+                transition: 0.5s all;
+                margin-bottom: -2px;
+                &:nth-child(1){
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2){
+                    display: none;
+                }
+                &:nth-child(3){
+                    transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }
+    }
+    .menu{
+        &__list{
+            position: fixed;
+            width: 50%;
+            height: 100vh;
+            flex-direction: column;
+            background-color: rgba(0,0,0, 0.8);
+            top: 0;
+            left: -100%;
+            margin-left: 0;
+            padding: 20px;
+            justify-content: center;
+            z-index: 2;
+            transition: 0.6s all
+        }
+        &__item{
+            border-right: none;
+            margin: 10px 0;
+        }
+        &__link{
+            font-size: 20px;
+        }
+        &_active{
+            left: 0;
+        }
+        &__contacts{
+            margin-left: 270px;
+        }
+        &__call{
+            font-size: 17px;
+        }
+        &__button{
+            padding-top: 11px;
+            width: 150px;
+            height: 40px;
+        }
+    }
+    .advantages{
+        &__wrapper{
+            grid-template: repeat(4,minmax(62px,auto))/repeat(2,330px);
+            column-gap: 40px;
+        }
+        &__title{
+            font-size: 13px;    
+        }
+    }
+    .title{
+        &__main{
+            font-size: 24px;
+        }
+        &__subtitle{
+            font-size: 18px;
+            padding: 0 60px;
+        }
+    }
+    .work{
+        &__wrapper{
+            grid-template-columns: repeat(3,220px);
+        }
+        &__title{
+            font-size: 16px;
+        }
+    }
+    .agent, .managers{
+        &__title{
+            font-size: 24px;
+        }
+        &__descr{
+            font-size: 17px;
+        }
+    }
+    .price{
+        &__wrapper{
+            grid-template: repeat(2, auto) / repeat(2, auto);
+            grid-auto-rows: auto;
+            row-gap: 15px;
+        }
+        &__name{
+            font-size: 14px;
+        }
+        &__cost{
+            font-size: 26px;
+        }
+    }
+    .consultation{
+        &__form{
+            flex-direction: column;
+            align-items: center;
+            padding: 45px 0 40px 0;
+        }
+        &__input{
+            margin: 12px 0;
+        }
+        label.error{
+            bottom: -28px;
+        }
+    }
+    .scheme{
+        &__wrapper{
+            &__first, &__second{
+                grid-template: repeat(2, auto) / repeat(2, auto);
+                row-gap: 26px;
+                column-gap: 40px;
+                align-items: center;
+                grid-auto-rows: auto;
+            }
+        }
+    }
+    .questions{
+        &__form{
+            grid-template: 45px 72px / repeat(3,auto);
+        }
+        label.error{
+            left: 8px;
+            font-size: 10px;
+        }
+        &__title{
+            font-size: 17px;
+        }
+        &__subtitle{
+            font-size: 12px;    
+        }
+    }
+    .footer{
+        &__title{
+            font-size: 12px;
+            margin-left: 20px;
+        }
+        &__contacts{
+            margin-left: 12px;
+        }
+        &__subheader{
+            font-size: 12px;
+        }
+        &__call{
+            font-size: 14px;
+        }
+        &__policy{
+            margin-left: 75px;
+        }
+        &__creator{
+            margin-left: 180px;
+        }
+        &__text{
+            margin-right: 5px;
+        }
+    }
+    .feedback{
+        .slick-prev{
+            left: 300px;
+        }
+        .slick-next{
+            right: 300px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container{
+        max-width: 540px;
+    }
+    .menu{
+        &__contacts{
+            margin-left: 90px;
+        }
+    }
+    .promo{
+        &__divider{
+            margin: 38px 50px 35px 50px;
+        }
+        &__uptitle{
+            font-size: 16px;
+        }
+        &__title{
+            font-size: 40px;
+            margin-top: 5px;
+        }
+        &__subtitle{
+            font-size: 22px;
+        }
+        &__descr{
+            font-size: 10px; 
+        }
+        &__wrapper{
+            column-gap: 5px;
+            grid-template-columns: repeat(4,130px);
+        }
+        &__btn{
+            height: 45px;
+            width: 160px;
+            font-size: 12px;
+        }
+    }
+    .advantages{
+        &__wrapper{
+            grid-template: repeat(4,minmax(62px,auto))/repeat(1,auto);
+        }
+    }
+    .title{
+        &__main{
+            font-size: 22px;    
+        }
+        &__subtitle{
+            font-size: 16px;
+            padding: 0;
+        }
+    }
+    .work{
+        &__wrapper{
+            grid-template-columns: repeat(1,auto);
+            grid-template-rows: repeat(3, minmax(400px, auto));
+            grid-auto-rows: minmax(400px, auto);
+            row-gap: 20px;
+        }
+        &__img{
+            height: 250px;
+            width: 400px;
+        }
+    }
+    .agent, .managers{
+        &__title{
+            font-size: 21px;
+        }
+        &__descr{
+            font-size: 14px;
+        }
+    }
+    .consultation{
+        &__title{
+            font-size: 24px;
+        }
+    }
+    .questions{
+        &__form{
+            grid-template: 45px 72px / repeat(3,167px);
+        }
+        label.error{
+            left: 2px;
+            font-size: 9px;
+        }
+        &__input{
+            input{
+                font-size: 10px;
+            }
+        }
+        &__textarea{
+            textarea{
+                font-size: 10px;
+            }
+        }
+    }
+    .map{
+        &__address{
+            padding: 15px 15px;
+            width: 235px;
+            height: 130px;
+            transform: translate(calc(-50% + 150px),-50%);
+            &::before{
+                z-index: -1;
+            }
+        }
+    }
+    .footer{
+        &__logo{
+            width: 55px;
+            height: unset;
+        }
+        &__title{
+            font-size: 10px;
+            margin-left: 10px;
+        }
+        &__contacts{
+            margin-left: 20px;
+        }
+        &__subheader{
+            font-size: 10px;
+        }
+        &__call{
+            font-size: 12px;
+        }
+        &__button{
+            margin-left: 10px;
+            width: 90px;
+            height: 30px;
+            font-size: 9px;
+            padding-top: 8px;
+        }
+        &__copyright{
+            font-size: 10px;
+        }
+        &__policy{
+            font-size: 10px;
+        }
+        &__creator{
+            margin-left: 100px;
+        }
+        &__text{
+            font-size: 10px;
+        }
+    }
+    .feedback{
+        .slick-prev{
+            left: 200px;
+        }
+        .slick-next{
+            right: 200px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container{
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .promo{
+        padding: 90px 0 40px 0;
+        &__uptitle{
+            font-size: 10px;
+        }
+        &__title{
+            font-size: 23px;
+            line-height: 48px;
+        }
+        &__subtitle{
+            font-size: 13px;
+        }
+        &__divider{
+            margin: 20px 30px;
+        }
+        &__wrapper{
+            grid-template-columns:none;
+            grid-template-rows: repeat(4, auto);
+            row-gap: 15px;
+        }
+        &__image{
+            height: 30px;
+        }
+        &__img{
+            width: 40px;
+        }
+        &__descr{
+            margin-top: 15px;
+        }
+        &__btn{
+            height: 35px;
+            width: 130px;
+            font-size: 10px;
+        }
+    }
+    .menu{
+        justify-content: center;
+        width: 100%;
+        &__img{
+            width: 50px;
+            height: 50px;
+        }
+        &__contacts{
+            margin-left: 60px;
+        }
+        &__subheader{
+            font-size: 10px;
+        }
+        &__call{
+            font-size: 10px;
+        }
+        &__button{
+            width: 80px;
+            height: 30px;
+            margin-left: 10px;
+            padding-top: 10px;
+            font-size: 7px;
+        }
+        &__item{
+            margin: 5px 0;
+        }
+        &__link{
+            font-size: 13px;
+        }
+        &__list{
+            width: 85%;
+        }
+    }
+    .hamburger{
+        right: 22px;
+        top: -12px;
+        span{
+            height: 2px;
+            width: 30px;
+        }
+    }
+    .advantages{
+        padding: 40px 0;
+        &__item{
+            column-gap: 9px;
+            row-gap: 5px;
+        }
+        &__title{
+            font-size: 12px;
+        }
+        &__descr{
+            font-size: 12px;
+        }
+    }
+    .title{
+        &__main{
+            font-size: 15px;
+        }
+        &__subtitle{
+            font-size: 12px;
+        }
+    }
+    .work{
+        padding: 30px 0;
+        &__wrapper{
+            grid-template-rows: repeat(3,minmax(350px,auto));
+        }
+        &__img{
+            height: 190px;
+            width: 300px;
+        }
+        &__title{
+            font-size: 14px;
+        }
+        &__descr{
+            font-size: 12px;
+        }
+    }
+    .agent, .managers{
+        padding: 40px 0 50px 0;
+        &__descr{
+            margin: 0;
+        }
+    }
+    .price{
+        padding: 40px 0;
+        &__wrapper{
+        grid-template: repeat(4, auto) / 300px;
+        justify-content: center;
+        }
+        &__name{
+            font-size: 12px;
+        }
+        &__cost{
+            font-size: 24px;
+        }
+        &__descr{
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        &__btn{
+            margin: 15px;
+        }
+    }
+    .consultation{
+        &__title{
+            font-size: 17px;
+        }
+    }
+    .scheme{
+        padding: 40px 0;
+        &__wrapper{
+            &__first, &__second{
+                grid-template: repeat(4, auto) / repeat(1, auto);
+            }
+        }
+    }
+    .questions{
+        padding: 40px 0;
+        &__form{
+            grid-template: repeat(4, minmax(40px , auto)) / auto;
+            row-gap: 12px;
+        }
+        &__textarea{
+            grid-column: unset;
+        }
+        &__button{
+            grid-column: unset;
+        }
+        &__input{
+            input{
+                padding: 12px 20px;
+            }
+        }
+        &__textarea{
+            textarea{
+                padding: 12px 20px; 
+            }
+        }
+        label.error{
+            top: -13px;
+            left: 10px;
+        }
+        &__button{
+            .btn{
+                height: 35px;
+                font-size: 10px;
+            }
+        }
+    }
+    .map{
+        &__address{
+            padding: 5px 7px;
+            width: 130px;
+            transform: translate(calc(-50% + 90px),-50%);
+        }
+        &__title{
+            font-size: 12px;
+        }
+        &__info, &__email{
+            font-size: 11px;
+        }
+    }
+    .footer{
+        &__logo{
+            width: 40px;
+        }
+        &__title{
+            font-size: 7px;
+            margin-left: 5px;
+        }
+        &__contacts{
+            margin-left: 9px;
+            line-height: 10px;
+        }
+        &__subheader{
+            font-size: 7px;
+        }
+        &__call{
+            font-size: 8px;
+        }
+        &__button{
+            display: none;
+        }
+        &__down{
+            margin-top: 5px;
+            justify-content: center;
+        }
+        &__upper{
+            justify-content: center;
+        }
+        &__copyright{
+            font-size: 8px;
+        }
+        &__policy{
+            margin-left: 20px;
+            font-size: 8px;
+        }
+        &__creator{
+            margin-left: 80px;
+        }
+        &__text{
+            margin-right: 5px;
+            font-size: 8px;
+        }
+        &__img{
+            width: 20px;
+        }
+    }
+    .modal{
+        width: 300px;
+    }
+    .feedback{
+        padding: 40px 0;
+        .slick-prev{
+            left: 80px;
+        }
+        .slick-next{
+            right: 80px;
+        }
+        .carousel{
+            &__title{
+                font-size: 16px;
+            }
+            &__descr{
+                font-size: 12px;
+            }
+        }
+    }
+}

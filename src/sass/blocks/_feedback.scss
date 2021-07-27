@@ -2,7 +2,7 @@
     padding: 51px 0 63px 0;
 }
 .carousel{
-    width: 1410px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
     margin-top: 30px;
@@ -39,11 +39,11 @@
     }
     .slick-next{
         top: 34px;
-        right: 600px;
+        right: 500px;
     }
     .slick-prev{
         top: 34px;
-        left: 600px;
+        left: 500px;
         z-index: 2;
     } 
     &__item.slick-current{

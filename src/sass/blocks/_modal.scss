@@ -12,12 +12,28 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 380px;
+    width: 350px;
     min-height: 400px;
     background-color: #f2f2f2;
     padding: 38px 40px 40px 40px;
+    text-align: center;
     &_mini{
         min-height: 140px;
+    }
+    &__close{
+        position: absolute;
+        font-size: 30px;
+        right: 15px;
+        top: 0;
+    }
+    &__subtitle{
+        color: $main_color;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    &__descr{
+        font-size: 14px;
+        margin-top: 5px;
     }
 }
 #thanks{

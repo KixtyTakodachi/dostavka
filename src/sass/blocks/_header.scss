@@ -83,3 +83,19 @@ header{
         }
     }
 }
+
+.hamburger{
+    display: none;
+    position: absolute;
+    height: 21px;
+    top: 7px;
+    right: 0;
+    cursor: pointer;
+    span{
+        display: block;
+        background-color: $main_color;
+        height: 3px;
+        width: 35px;
+        margin-bottom: 3px;
+    }
+}
